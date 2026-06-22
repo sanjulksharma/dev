@@ -22,7 +22,8 @@ Plain-Java repo collecting LLD/HLD practice. No Gradle/Maven — each file decla
             └── infra/
                 ├── urlshortener/
                 ├── taskprocessor/                 # single-node task processor
-                └── distributedtaskqueue/          # distributed task queue
+                ├── distributedtaskqueue/          # distributed task queue
+                └── notificationservice/           # multi-channel notifications (email/SMS/push/in-app)
 ```
 
 Each LLD problem is a self-contained sub-package. Domain folders (`fintech`, `mobility`, `infra`) exist so the practice list stays grep-able as it grows.
@@ -36,6 +37,7 @@ Each LLD problem is a self-contained sub-package. Domain folders (`fintech`, `mo
 java -cp "out:lib/*" lld.practice.fintech.splitswise.SplitswiseMain
 java -cp "out:lib/*" lld.practice.infra.urlshortener.Application
 java -cp "out:lib/*" lld.practice.infra.taskprocessor.TaskProcessorSimulator
+java -cp "out:lib/*" lld.practice.infra.notificationservice.NotificationMain
 java -cp "out:lib/*" lld.patterns.abstractfactory.ApplicationClient
 ```
 
