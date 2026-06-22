@@ -1,0 +1,5 @@
+package lld.practice.infra.notificationservice.exception;
+
+public class RateLimitExceededException extends NotificationException {
+    public RateLimitExceededException(String message) { super(message); }
+}
